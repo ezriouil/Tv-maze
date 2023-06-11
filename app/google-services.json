@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "67800829984",
+    "project_id": "authentication-1aaac",
+    "storage_bucket": "authentication-1aaac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67800829984:android:9788d5ee45954216c16c45",
+        "android_client_info": {
+          "package_name": "www.ezriouil.tvmaze"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCASBmtLrvAoSyhJAXOlbxCvTOo0N_YOPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

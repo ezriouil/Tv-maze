@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tv maze</string>
+    <string name="createYourAcc">Create your account for free !.</string>
+    <string name="singUp">Sing Up</string>
+    <string name="fullName">fullName</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="ok">OK</string>
+    <string name="haveYouAccBefore">have you an account before?.</string>
+    <string name="sing_in">Sing In</string>
+    <string name="you_do_not_have_acc">You Don\'t have Acc</string>
+</resources>
