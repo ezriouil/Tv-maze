@@ -10,5 +10,4 @@ class SingInUseCase @Inject constructor(private val repositoryImpl: AuthReposito
     operator fun invoke(email: String, password: String): Flow<Resource<Boolean>> =
         repositoryImpl.singIn(email = email, password = password)
 
-
 }

@@ -1,6 +1,5 @@
 package www.ezriouil.tvmaze.feature_tv_maze.presentation.screen.home
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -35,7 +34,7 @@ fun HomeScreen(
                 titleColor = Color.White,
                 tvShow = tvShowItem
             ) {
-                navController.navigate(ManageUI.DetailScreen.route + "/" + it)
+                navController.navigate(ManageUI.DetailScreen.route + "/$it")
             }
         }
     }
@@ -53,50 +52,13 @@ fun HomeScreen(
                     .padding(25.dp)
             )
         }
-        Log.d("TAG", "HomeScreen: ${state.error.toString()}")
-        if (state.error != null) {
+        if (state.error != null && !state.isLoading && state.tvShows.isEmpty()) {
             Text(
                 text = state.error,
                 style = MaterialTheme.typography.h1,
                 color = Color.White
             )
         }
-
     }
 
 }
-//Loading Code
-/*
-Column(
-                modifier = Modifier.fillMaxSize(),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Box(
-                    contentAlignment = Alignment.Center,
-                    modifier = Modifier.clip(RoundedCornerShape(16.dp))
-                ) {
-                    CircularProgressIndicator(
-                        color = Color.White,
-                        modifier = Modifier
-                            .background(MaterialTheme.colors.background)
-                            .padding(25.dp)
-                    )
-                }
-            }
- */
-
-//Error Code
-/*
-Column(
-                modifier = Modifier.fillMaxSize(),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = (tvShows as Resource.Error).error,
-                    style = MaterialTheme.typography.h1,
-                    color = Color.White
-                )
-            }
- */

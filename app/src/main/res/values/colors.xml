@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorTransparent">#00000000</color>
+    <color name="statusBarColor">#FF161A37</color>
     <color name="colorBackgroundLight">#070d2d</color>
     <color name="colorBackgroundDark">#000000</color>
     <color name="colorPrimary">#546ee5</color>

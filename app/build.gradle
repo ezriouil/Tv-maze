@@ -4,7 +4,6 @@ plugins {
     id "kotlin-parcelize"
     //firebase
     id 'com.google.gms.google-services'
-
     //hilt
     id "kotlin-kapt"
     id("dagger.hilt.android.plugin")

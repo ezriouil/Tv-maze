@@ -17,7 +17,7 @@ fun CardTvShow(
     modifier: Modifier = Modifier,
     tvShow: TvShow,
     titleColor: Color,
-    onClick: (Int)->Unit
+    onClick: (Int) -> Unit
 ) {
     Card(
         modifier = modifier
@@ -32,8 +32,9 @@ fun CardTvShow(
             modifier = modifier.fillMaxSize()
         ) {
             //Image
-            ImageNetwork(image = tvShow.
-            image?.medium!!, modifier = modifier)
+            ImageNetwork(
+                image = tvShow.image?.medium!!, modifier = modifier
+            )
             Column(
                 modifier = modifier
                     .fillMaxSize()
